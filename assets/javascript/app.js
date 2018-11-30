@@ -186,7 +186,7 @@ function clearAnswers(){
 };
 
 $("#startButton").on("click", function() {
-
+	console.log("button pressed");
 	$("#startButton").text()
 	if($("#startButton").text()==="Start!"){
 		$("#myVideo").show();
