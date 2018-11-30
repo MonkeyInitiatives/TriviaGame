@@ -260,6 +260,7 @@ $(".answer4").on("click", function() {
 
 $(document).ready(function() {
 	vid = document.getElementById("myVideo");
+	console.log(vid);
 	$("#myVideo").hide();
 	$("#theImage").hide();
 	console.log("start");
