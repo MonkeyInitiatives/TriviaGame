@@ -255,7 +255,7 @@ $(".answer4").on("click", function() {
 	    smallWait();
 });
 
-$( document ).ready(function() {
+$(document).ready(function() {
 	$("#myVideo").hide();
 	$("#theImage").hide();
 	console.log("start");
