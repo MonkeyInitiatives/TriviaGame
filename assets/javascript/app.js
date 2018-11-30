@@ -185,7 +185,12 @@ function clearAnswers(){
     $(".answer4").text("");
 };
 
-$("#startButton").on("click", function() {
+$(document).ready(function() {
+	$("#myVideo").hide();
+	$("#theImage").hide();
+	console.log("start");
+	
+	$("#startButton").on("click", function() {
 	console.log("button pressed");
 	$("#startButton").text()
 	if($("#startButton").text()==="Start!"){
@@ -212,6 +217,7 @@ $(".answer1").on("click", function() {
 		$("#theImage").fadeIn("slow");
         smallWait();
 });
+
 $(".answer2").on("click", function() {
         if(questionArray[randomNumber].correct==="2"){
 			$(".question").text("Correct!");
@@ -226,6 +232,7 @@ $(".answer2").on("click", function() {
 		$("#theImage").fadeIn("slow");
 	    smallWait();
 });
+
 $(".answer3").on("click", function() {
         if(questionArray[randomNumber].correct==="3"){
 			$(".question").text("Correct!");
@@ -240,6 +247,7 @@ $(".answer3").on("click", function() {
 		$("#theImage").fadeIn("slow");
 	    smallWait();
 });
+
 $(".answer4").on("click", function() {
         if(questionArray[randomNumber].correct==="4"){
 			$(".question").text("Correct!");
@@ -254,9 +262,5 @@ $(".answer4").on("click", function() {
 		$("#theImage").fadeIn("slow");
 	    smallWait();
 });
-
-$(document).ready(function() {
-	$("#myVideo").hide();
-	$("#theImage").hide();
-	console.log("start");
+	
 });
