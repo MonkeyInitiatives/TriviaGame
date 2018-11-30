@@ -185,7 +185,10 @@ function clearAnswers(){
     $(".answer4").text("");
 };
 
-$("#startButton").on("click", function() {
+$(document).ready(function() {
+	vid = document.getElementById("myVideo");
+	
+	$("#startButton").on("click", function() {
 	console.log("button pressed");
 	$("#startButton").text()
 	if($("#startButton").text()==="Start!"){
@@ -257,9 +260,7 @@ $(".answer4").on("click", function() {
 		$("#theImage").fadeIn("slow");
 	    smallWait();
 });
-
-$(document).ready(function() {
-	vid = document.getElementById("myVideo");
+	
 	console.log(vid);
 	$("#myVideo").hide();
 	$("#theImage").hide();
