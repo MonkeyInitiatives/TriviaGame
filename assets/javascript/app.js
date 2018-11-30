@@ -55,7 +55,7 @@ var randomNumber;
 
 var randomNumberArray=[];
 
-var vid = $("#myVideo");
+var vid;
 
 function newGame(){
 	$("#myVideo").hide();
@@ -259,6 +259,7 @@ $(".answer4").on("click", function() {
 });
 
 $(document).ready(function() {
+	vid = document.getElementById("myVideo");
 	$("#myVideo").hide();
 	$("#theImage").hide();
 	console.log("start");
