@@ -18,6 +18,8 @@ h1, h3, h5{
 	1px -1px 0 #FFF,
 	-1px 1px 0 #FFF,
 	1px 1px 0 #FFF; 
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 h3:hover {
