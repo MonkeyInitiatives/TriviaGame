@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,35 +14,36 @@
 
 </head>
 <body>
-	<div class="container" id="divVideo">
+	<div class="container centered" id="divVideo">
 		<video id="myVideo" onended="newGame()">
 			<source src="assets/video/Disney%20Opening%20Logo.mp4" type="video/mp4">
 			Your browser does not support HTML5 video.
 		</video>
 	</div>
-	<div class="container">
-		<h1 class="timeLeft" align="center"></h1>
+	<div class="container centered">
+		<h1 class="timeLeft">Time Left</h1>
 	</div>
-	<div class="container">
-	    <h1 class="question" align="center"></h1>
+	<div class="container centered">
+	    <h1 class="question">Question</h1>
 	</div>
-	<div class="container" style="text-align: center;">
+	<div class="container centered" style="text-align: center;">
 	    <img src="assets/images/logo.gif" alt="Correct Image" id="theImage">
 	    <span id="gameTitle">Disney Trivia Game</span>
 	</div>
-	<div class="container">
+	<div class="container centered">
 	    <div class="answerBank">
-	    <h3 class="answer1" align="center">Answer 1</h3>
-	    <h3 class="answer2" align="center">Answer 2</h3>
-	    <h3 class="answer3" align="center">Answer 3</h3>
-	    <h3 class="answer4" align="center">Answer 4</h3>
+	    <h3 class="answer1">Answer 1</h3>
+	    <h3 class="answer2">Answer 2</h3>
+	    <h3 class="answer3">Answer 3</h3>
+	    <h3 class="answer4">Answer 4</h3>
 	    </div>
 	</div>
-	    <h5 class="wins" align="center"></h5>
-		<h5 class="losses" align="center"></h5>
-		<h5 class="unanswered" align="center"></h5>
-		
-		<div align="center"><button type="button" class="btn btn-danger" id="startButton">Start!</button></div>
+	<div>
+	    <h5 class="wins  centered">Wins</h5>
+		<h5 class="losses  centered">Losses</h5>
+		<h5 class="unanswered  centered">Unanswered</h5>
+	</div>
+	<div class="centered"><button type="button" class="btn btn-danger" id="startButton">Start!</button></div>
 	
 </body>
 </html>
