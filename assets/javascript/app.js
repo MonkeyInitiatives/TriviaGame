@@ -55,7 +55,7 @@ var randomNumber;
 
 var randomNumberArray=[];
 
-var vid = document.getElementById("myVideo");
+var vid = $("#myVideo");
 
 function newGame(){
 	$("#myVideo").hide();
@@ -185,12 +185,7 @@ function clearAnswers(){
     $(".answer4").text("");
 };
 
-$(document).ready(function() {
-	$("#myVideo").hide();
-	$("#theImage").hide();
-	console.log("start");
-	
-	$("#startButton").on("click", function() {
+$("#startButton").on("click", function() {
 	console.log("button pressed");
 	$("#startButton").text()
 	if($("#startButton").text()==="Start!"){
@@ -262,5 +257,9 @@ $(".answer4").on("click", function() {
 		$("#theImage").fadeIn("slow");
 	    smallWait();
 });
-	
+
+$(document).ready(function() {
+	$("#myVideo").hide();
+	$("#theImage").hide();
+	console.log("start");
 });
