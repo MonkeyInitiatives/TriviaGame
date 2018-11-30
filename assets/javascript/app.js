@@ -185,6 +185,16 @@ function clearAnswers(){
 };
 
 $(document).ready(function() {
+	
+	$(".question").text("");
+    $(".answer1").text("");
+    $(".answer2").text("");
+    $(".answer3").text("");
+    $(".answer4").text("");
+    $(".wins").text("");
+    $(".losses").text("");
+    $(".unanswered").text("");
+    
 	vid = document.getElementById("myVideo");
 	
 	$("#startButton").on("click", function() {
