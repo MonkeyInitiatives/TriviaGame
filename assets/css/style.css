@@ -41,6 +41,16 @@ h3:hover {
     margin-right: auto;
     box-shadow: 10px 10px 5px grey;
 }
+#divVideo{
+	height: 480px;	
+}
+#myVideo{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 640px;
+	height: 480px;
+}
 #gameTitle{
 	color: black;
 	font-family: DISNEY;
@@ -65,5 +75,12 @@ h3:hover {
 	}
 	h3:hover {
 		background-color:transparent;
+	}
+	#myVideo{
+		width: 290px;
+		height: 217px;
+	}
+	#divVideo{
+		height: 240px;	
 	}
 }

@@ -13,7 +13,12 @@
 
 </head>
 <body>
-
+<div class="container" id="divVideo">
+	<video id="myVideo" onended="newGame()">
+		<source src="assets/video/Disney%20Opening%20Logo.mp4	" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video>
+</div>
 <div class="container">
 	<h1 class="timeLeft" align="center"></h1>
 </div>
@@ -97,7 +102,11 @@ var randomNumber;
 
 var randomNumberArray=[];
 
+var vid = document.getElementById("myVideo");
+
 function newGame(){
+	$("#myVideo").hide();
+	$("#divVideo").hide();
 	$("#theImage").hide();
 	$("#gameTitle").hide();
 	$("#startButton").text("Start!");
@@ -227,7 +236,8 @@ $("#startButton").on("click", function() {
 
 	$("#startButton").text()
 	if($("#startButton").text()==="Start!"){
-		newGame();
+		$("#myVideo").show();
+		vid.play();
 	}
 	else{
 		resetGame();
@@ -290,6 +300,11 @@ $(".answer4").on("click", function() {
 		$("#theImage").attr("src",questionArray[randomNumber].image);
 		$("#theImage").fadeIn("slow");
 	    smallWait();
+});
+
+$( document ).ready(function() {
+	$("#myVideo").hide();
+	$("#theImage").hide();
 });
     
     </script>
