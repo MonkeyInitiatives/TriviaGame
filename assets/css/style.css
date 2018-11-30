@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'DISNEY';
+    src: url('../font/disney.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  background: url("../images/background.jpg");
+  height: 100%;
+}
+
+h1, h3, h6{
+  color: black;
+  font-family: DISNEY;
+  letter-spacing: 2px;
+	text-shadow:
+	-1px -1px 0 #FFF,
+	1px -1px 0 #FFF,
+	-1px 1px 0 #FFF,
+	1px 1px 0 #FFF; 
+}
+
+
+h3:hover {
+    background-color: red;
+}
+
+#startButton{
+	color: black;
+	font-family: DISNEY;
+	letter-spacing: 2px;
+}
+
+#theImage{
+	border:5px solid black;
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 5px grey;
+}
+#gameTitle{
+	color: black;
+	font-family: DISNEY;
+	letter-spacing: 2px;
+	font-size: 120px;
+	text-shadow:
+	-1px -1px 0 #FFF,
+	1px -1px 0 #FFF,
+	-1px 1px 0 #FFF,
+	1px 1px 0 #FFF; 
+}
+
+@media only screen and (max-width: 600px) {
+    #gameTitle{
+	   font-size: 60px;
+	}
+}
