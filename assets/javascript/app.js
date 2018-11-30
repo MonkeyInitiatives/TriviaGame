@@ -122,7 +122,6 @@ function decrement() {
 		clearInterval(intervalId);
 		time=5;
 		$(".question").text("Time's Up. The correct answer was "+rightAnswer);
-		$("#theImage").attr("src",questionArray[randomNumber].image);
 		$("#theImage").fadeIn("slow");
 		clearAnswers();
 		intervalId = setInterval(nextQWait, 1000);
@@ -175,7 +174,7 @@ function newQuestion(){
     $(".answer3").text(questionArray[randomNumber].answer3);
     $(".answer4").text(questionArray[randomNumber].answer4); 
     rightAnswer = questionArray[randomNumber]["answer"+parseInt(questionArray[randomNumber].correct)];
-	console.log(rightAnswer);
+    $("#theImage").attr("src",questionArray[randomNumber].image);
 };
 
 function clearAnswers(){
@@ -189,7 +188,6 @@ $(document).ready(function() {
 	vid = document.getElementById("myVideo");
 	
 	$("#startButton").on("click", function() {
-	console.log("button pressed");
 	$("#startButton").text()
 	if($("#startButton").text()==="Start!"){
 		$("#myVideo").show();
@@ -211,7 +209,6 @@ $(".answer1").on("click", function() {
             losses++;
         }
 		clearAnswers();
-		$("#theImage").attr("src",questionArray[randomNumber].image);
 		$("#theImage").fadeIn("slow");
         smallWait();
 });
@@ -226,7 +223,6 @@ $(".answer2").on("click", function() {
             losses++;
         }
 		clearAnswers();
-		$("#theImage").attr("src",questionArray[randomNumber].image);
 		$("#theImage").fadeIn("slow");
 	    smallWait();
 });
@@ -241,7 +237,6 @@ $(".answer3").on("click", function() {
             losses++;
         }
 		clearAnswers();
-		$("#theImage").attr("src",questionArray[randomNumber].image);
 		$("#theImage").fadeIn("slow");
 	    smallWait();
 });
@@ -256,13 +251,10 @@ $(".answer4").on("click", function() {
             losses++;
         }
 		clearAnswers();
-		$("#theImage").attr("src",questionArray[randomNumber].image);
 		$("#theImage").fadeIn("slow");
 	    smallWait();
 });
 	
-	console.log(vid);
 	$("#myVideo").hide();
 	$("#theImage").hide();
-	console.log("start");
 });
