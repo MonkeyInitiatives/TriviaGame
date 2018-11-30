@@ -185,7 +185,7 @@ function clearAnswers(){
 };
 
 $(document).ready(function() {
-	
+	$(".timeLeft").text("");
 	$(".question").text("");
     $(".answer1").text("");
     $(".answer2").text("");
