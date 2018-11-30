@@ -11,7 +11,7 @@ function genericQuestion(question, answer1, answer2, answer3, answer4, correct, 
     this.answer4 = answer4;
     this.correct = correct;
     this.image = "assets/images/"+image;
-}
+};
 
 var question1 = new genericQuestion("How many dwarves are there in Snow White?","7","9","0","10","1","question1.jpg");
 var question2 = new genericQuestion("What was the name of the first Mickey Mouse cartoon?","Make Mine Melody","Plane Crazy","Steamboat Willie","Mickey Mousecapade","2","question2.jpg");
@@ -98,7 +98,7 @@ function resetGame(){
 	losses=0;
 	unanswered=0;
 	randomNumberArray=[];
-}
+};
 
 function run() {
       clearInterval(intervalId);
@@ -134,7 +134,7 @@ function smallWait(){
 		clearInterval(intervalId);
 		time=5;
 		intervalId = setInterval(nextQWait, 1000);
-}
+};
 
 function nextQWait(){
 	time--;
@@ -146,14 +146,14 @@ function nextQWait(){
 	if (time === 0) {
 		stop();
     }
-}
+};
 
 function stop() {
 
 	clearInterval(intervalId);
 	time=15;
 	newGame();
-}
+};
 
 function newQuestion(){
 	run();
@@ -183,7 +183,7 @@ function clearAnswers(){
     $(".answer2").text("");
     $(".answer3").text("");
     $(".answer4").text("");
-}
+};
 
 $("#startButton").on("click", function() {
 
