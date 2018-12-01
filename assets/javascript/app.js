@@ -173,6 +173,10 @@ function newQuestion(){
     $(".answer2").text(questionArray[randomNumber].answer2);
     $(".answer3").text(questionArray[randomNumber].answer3);
     $(".answer4").text(questionArray[randomNumber].answer4); 
+    $(".answer1").show();
+    $(".answer2").show();
+    $(".answer3").show();
+    $(".answer4").show();
     rightAnswer = questionArray[randomNumber]["answer"+parseInt(questionArray[randomNumber].correct)];
     $("#theImage").attr("src",questionArray[randomNumber].image);
 };
@@ -195,6 +199,10 @@ $(document).ready(function() {
     $(".answer2").text("");
     $(".answer3").text("");
     $(".answer4").text("");
+    $(".answer1").hide();
+    $(".answer2").hide();
+    $(".answer3").hide();
+    $(".answer4").hide();
     $(".wins").text("");
     $(".losses").text("");
     $(".unanswered").text("");
