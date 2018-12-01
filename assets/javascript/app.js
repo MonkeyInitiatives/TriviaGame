@@ -58,6 +58,7 @@ var randomNumberArray=[];
 var vid;
 
 function newGame(){
+	$(".answerBank").show();
 	$("#myVideo").hide();
 	$("#divVideo").hide();
 	$("#theImage").hide();
@@ -195,6 +196,7 @@ function clearAnswers(){
 };
 
 $(document).ready(function() {
+	$(".answerBank").hide();
 	$(".timeLeft").text("");
 	$(".question").text("");
     $(".answer1").text("");
