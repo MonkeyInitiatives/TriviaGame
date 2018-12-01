@@ -75,7 +75,7 @@ h3:hover {
 
 @media only screen and (max-width: 600px) {
 	.question{
-		height: 72px;
+		height: 100px;
 	}
     #gameTitle{
 	   font-size: 60px;
