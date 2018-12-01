@@ -159,7 +159,6 @@ function stop() {
 function newQuestion(){
 	run();
     randomNumber = Math.floor(Math.random() * questionArray.length);
-    randomNumber = 6;
     var shouldPush = true;
     while(shouldPush){
 		if(randomNumberArray.includes(randomNumber)){
