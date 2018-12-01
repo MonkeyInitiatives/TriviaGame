@@ -25,7 +25,9 @@ h1, h3, h5{
 h3:hover {
     background-color: red;
 }
-
+.question{
+	height: 150px;
+}
 .centered{
 	display: block;
     margin-left: auto;
@@ -72,14 +74,17 @@ h3:hover {
 }
 
 @media only screen and (max-width: 600px) {
+	.question{
+		height: 72px;
+	}
     #gameTitle{
 	   font-size: 60px;
 	}
 	h1{
-		font-size: 32px;
+		font-size: 34px;
 	}
 	h3{
-		font-size: 24px;
+		font-size: 26px;
 	}
 	h3:hover {
 		background-color:transparent;
