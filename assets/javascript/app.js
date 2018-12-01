@@ -182,6 +182,10 @@ function clearAnswers(){
     $(".answer2").text("");
     $(".answer3").text("");
     $(".answer4").text("");
+    $(".answer1").hide();
+    $(".answer2").hide();
+    $(".answer3").hide();
+    $(".answer4").hide();
 };
 
 $(document).ready(function() {
