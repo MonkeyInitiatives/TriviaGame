@@ -77,6 +77,7 @@ function newGame(){
     time=15;
     clockRunning = false;
     if(wins+losses+unanswered<10){
+	    console.log("new question");
    		newQuestion();
 	}
 	else{
