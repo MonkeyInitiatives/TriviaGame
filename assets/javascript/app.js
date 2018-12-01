@@ -59,6 +59,7 @@ var vid;
 
 function newGame(){
 	$(".answerBank").show();
+	$(".question").show();
 	$("#myVideo").hide();
 	$("#divVideo").hide();
 	$("#theImage").hide();
@@ -197,6 +198,7 @@ function clearAnswers(){
 
 $(document).ready(function() {
 	$(".answerBank").hide();
+	$(".question").hide();
 	$(".timeLeft").text("");
 	$(".question").text("");
     $(".answer1").text("");
